@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>HTML 코딩 맛보기</title>
+    <meta name="keywords" content='html 맛보기'>
+    <meta meta="description" content="heml 코드를 따라치면서 맛보기">
+    <meta name="author" content="PNU student">
+    <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="https://www.pusan.ac.kr/" target="_blank"><h1>부산대학교</h1></a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="#">대학/대학원</a></li>
+                    <li><a href="#">입학/취업</a></li>
+                    <li><a href="#">연구/산학</a></li>
+                    <li><a href="#">대학생활</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contents">
+            <section id='content1'>
+                <h2>교육이념</h2>
+                <p>우리 대학은 <strong>진리</strong>, <b>자유</b>, <em>봉사의 정신</em>을 실현하는 참 대학으로서 <i>인류애</i>를<br/>
+                기반으로 시대의 흐름을 통찰한 새로운 가치 체계를 만들어 지역과 국가 그리고 <br/>
+                인류 사회의 발전에 기여하는 학문 연구와 인재 양성을 통해 사회의 미래 비전을<br/>
+                제시하고 실천합니다.</p>
+                <h2>교육목적</h2>
+                <p><blockquote>국가 및 인류사회 발전에 기여할 수 있는 유능한 인재를 양성</blockquote>
+                대한민국을 대표하는 대학다운 대학인 우리 부산대학교는 대한민국 교육의<br/>
+                근본 이념에 입각하여 진리, 자유, 봉사의 정신으로 학술의 심오한 이론과<br/>
+                응용 방법을 교수, 연구하며, 국가 및 인류사회발전에 기여할 수 있는 유능한 인재를<br/>
+                양성하는 것을 목적으로 하고 있습니다.</p>
+            </section>
+            <section id="content2">
+                <h2>인재상</h2>
+                <ol type="A" start="2">
+                    <li>창의적 지식인</li>
+                    <li>개방적 지식인</li>
+                    <li>봉사하는 지식인</li>
+                    <li>글로번 전문인</li>
+                </ol>
+            </section>
+            <section id="content3">
+                <h2>전략</h2>
+                <dl>
+                    <dt>교육</dt>
+                    <dd>통섭형 글로벌 리더 육성</dd>
+                    <dd>통섭형 교양 교육 강화</dd>
+                    <dt>연구</dt>
+                    <dd>글로벌 특화</dd>
+                    <dt>봉사의 산실</dt>
+                    <dd>지역사회와 함께하는 캠퍼스</dd>
+                </dl>
+            </section>
+            
+            <section id="content5">
+                <h2>식단</h2>
+                <table border="1">
+                    <caption>금정회관 교직원 식당</caption>
+                    <thred>
+                        <tr>
+                            <th>구분</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </tr>
+                    </thred>
+                    <tbody>
+                        <tr>
+                            <th>중식</th>
+                            <td>닭개장</td>
+                            <td>우동국</td>
+                            <td>설렁탕</td>
+                            <td>바지락살미역국</td>
+                            <td>어묵국</td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <th>비고</th>
+                           <td colspan="5"></td>
+                           </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="content6">
+                <h2>부산대학교 로고</h2>
+                <img src="./resource/logo1.jpg" alt="부산대학교 로고">
+            </section>
+            <section id="content7">
+                <h2>오디오</h2>
+                <audio src="./resource?SAMPLE_1.MP3" controls></audio>
+                <h2>비디오</h2>
+                <video src="./resource/cute_cat_mute.mp4" controls></video>
+            </section>
+            <section id="content8">
+                <h2>회원가입</h2>
+                <form autocomplete="off">
+                    <fieldset>
+                        <legend>아이디 입력</legend>
+                        <label for="id">아이디</label>
+                        <input type="text" id="id" placeholder="5자 이상" required>
+                        <input type="button" value="중복확인"><br/>
+                        <label for="pw">비밀번호</label>
+                        <input type="password" id="pw">
+                    </fieldset>
+                    <fieldset>
+                        <legend>개인정보 입력</legend>
+                        <p>학과 구분</p>
+                        <label><input type="radio" name="dept" value="bio">의생명융합공학부</label>
+                        <label><input type="radio" name="dept" value="cs">정보컴퓨터공학부</label>
+                        <p>관심과목</p>
+                        <label><input type="checkbox" value="math" checked>수학</label>
+                        <label><input type="checkbox" value="eng" checked>영어</label>
+                        <label><input type="checkbox" value="sci">과학</label>
+                        <p>지원전공</p>
+                        <select>
+                            <option disabled selected>선택해주세요</option>
+                            <option value="ds">데이터사이언스</option>
+                            <option value='bio'>의생명공학</option>
+                        </select>
+                        <P>자기소개</P>
+                        <textarea cols=60 rows=10></textarea>
+                        <p>서류 첨부</p>
+                        <input type="file">
+                        <input type="hidden" name="type" value="student"><br/>
+                        <input type="submit" value="가입하기">
+                        <input type="reset" value="취소">
+                    </fieldset>
+                </form>
+
+            </section>
+        </main>
+        <footer>
+            
+                <div id="bottomMenu">
+                    <ul>
+                        <li><a href="#">청렴센터</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">정보공개(청구)</a></li>
+                        <li><a href="#">행정서비스헌장</a></li>
+                    </ul>
+                </div>
+        </footer>
+    </body>
+</html>
